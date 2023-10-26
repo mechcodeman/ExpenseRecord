@@ -1,17 +1,56 @@
-<div class="home-page-title">Expense Record</div>
-<div class="item-bar">
-  <table datatable class="table table-hover">
-    <tbody>
-      <tr>
-        <td class="td">
-          <span class="span-common">Des</span>
-          <span class="span-common">type</span>
-          <span class="span-common">amount</span>
-          <span class="span-common">date</span>
-          <button>X</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<button class="add-button">Create new</button>
+<div class="firstpage">
+  <div class="home-page-title">Expense Record</div>
+  <div class="item-bar">
+    <table datatable class="table table-hover">
+      <tbody>
+        <tr *ngFor="let item of items; let i = index">
+          <td class="td" (click)="updateItem(i)">
+            <span class="span-common">{{ item.description }}</span>
+            <span class="span-common">{{ item.type }}</span>
+            <span class="span-common">{{ item.amount }}</span>
+            <span class="span-common">{{ item.createdTime }}</span>
+            <button (click)="onDelete(i)">X</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button class="add-button">Create new</button>
+<!-- </div>
+<div class="secondpage">
+  <div class="home-page-title">Expense Item Detail</div>
+  <div class="item-bar">
+    <form action="" class="form">
+      <div class="inputContainer">
+        <label for="" class="label">Description</label>
+        <input type="text" class="input" placeholder="a">
+      </div>
+
+      <div class="inputContainer">
+        <label for="" class="label">Type</label>
+        <input type="text" class="input" placeholder="a">
+      </div>
+
+      <div class="inputContainer">
+        <label for="" class="label">Amount</label>
+        <input type="text" class="input" placeholder="a">
+      </div>
+
+      <div class="inputContainer">
+        <label for="" class="label">CreatedTime</label>
+        <input type="text" class="input" placeholder="a">
+      </div>
+    </form>
+  </div>
+  <div class="expense-item">
+    <div class="list-detail-button-group">
+      <button (click)="onDelete()" class="list-detail-button-common delete-button">
+        Delete
+      </button>
+
+      <button class="list-detail-button-common save-button" (click)="saveItem()">
+        Save
+      </button>
+    </div>
+  </div>
+</div> -->

@@ -8,7 +8,7 @@ const PROXY_CONFIG = [
     context: [
       "/**",
    ],
-    target: target,
+    target: "https://localhost:7081/",
     secure: false,
     headers: {
       Connection: 'Keep-Alive'
