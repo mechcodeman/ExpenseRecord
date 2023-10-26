@@ -5,17 +5,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CounterComponent } from './counter/counter.component';
-import {GreetingComponent} from "./greeting/greeting.component";
+import { AppRoutingModule } from './app-routing.module';
+import { ExpenseItemComponent } from './expense-item/expense-item.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        CounterComponent,
-        GreetingComponent
+        ExpenseItemComponent,
+        NotFoundComponent,
     ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    AppRoutingModule,
     HttpClientModule,
     FormsModule,
   ],
