@@ -1,0 +1,38 @@
+.home-page-title {
+  width: 470px;
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #278AFF;
+  color: white;
+  padding: 17px 0 17px 0;
+}
+
+.item-bar {
+  height: 520px;
+  width: 470px;
+  overflow: auto;
+}
+
+.span-common {
+  display:inline-block;
+  width: 60px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: middle;
+  /* margin-left: 5px; */
+}
+
+.add-button {
+  width: 450px;
+  height: 36px;
+  margin-left: 10px;
+  background-color: #278AFF;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  color: #FFFFFF;
+}

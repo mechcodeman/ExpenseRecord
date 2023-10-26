@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  width: 960px;
+  height: 640px;
+  margin: auto;
+	/* position: absolute;
+  top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; */
+  border: 1px solid #C7D0D8;
+  border-radius: 8px;
+}
+
+.home-page {
+  display: flex;
+  width: 470px;
+  height: 630px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 1px solid #C7D0D8;
+  border-radius: 8px;
+}
+
+.expense-item {
+  display: flex;
+  width: 470px;
+  height: 630px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 1px solid #C7D0D8;
+  border-radius: 8px;
+}
